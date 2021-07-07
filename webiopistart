@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /usr/share/webiopi/htdocs/app/line/
+sudo webiopi -d -c /etc/webiopi/config > webiopi.log
+######################

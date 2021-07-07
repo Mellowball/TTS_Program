@@ -1,0 +1,2 @@
+#!/bin/bash
+chromium-browser --incognito --kiosk http://localhost:8000/air.html
