@@ -1,0 +1,37 @@
+div.linkbar{ 
+    display: inline;
+    position: absolute;
+    right: 100px;
+}
+a{
+    text-decoration: none;
+} 
+li.linkbar {  
+    display: inline;
+    padding-left: 3px;
+    padding-right: 10px;
+    border-right: 1px solid #767676;
+    margin-right: 10px;
+}
+
+ul.menubar{
+    text-align: center;
+    padding-top: 10px;
+    height: 30px;
+    background: green;
+}
+li.menubar{ 
+    display: inline;
+    padding-left: 3px;
+    padding-right: 30px;
+    padding-left: 20px;
+    border-right: 1px solid white;
+}
+a.menubar{
+    color: white;
+    font-size: 20pt;
+}
+img.logo{
+    position: absolute;
+    top: 150px;
+}

@@ -1,0 +1,26 @@
+input[type="text"],
+input[type="password"]{
+    width: 250px;
+}
+h1{
+    text-align: center;
+}
+input{
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+select{
+    width: 70px;
+    height: 25px;
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+#map{
+    height: 400px;
+    width: 700px;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
