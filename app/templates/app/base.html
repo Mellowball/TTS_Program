@@ -1,0 +1,43 @@
+<!-- base.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie-edge' />
+    <link rel ="shortcut icon" href="#">
+    <title>아파트 안내문</title>
+    <style>
+	ul.menubar {
+		background: orange;
+		height: 30px;
+		text-align: center;
+		padding-top: 10px;}
+	li.menubar {
+		padding-right: 30px;
+		padding-left: 20px;
+		border-right: 1px solid black; 
+		display: inline;}
+    </style>
+</head>
+<body>
+    <div class="mainboard">
+	<a href="/app"><img src="/media/img/gohome.png" width="80" height="80" vspace="10px" hspace="15px"></a>
+	<a href="/app/admin/login"><img src="/media/img/database.png" align="right" width="80" height="80" vspace="10px" hspace="15px"></a>
+	<ul class="menubar">
+	    <li class="menubar"><a href="/app" style="color:black;">한국어</a></li>
+	    <li class="menubar"><a href="/app/home_others/en" style="color:black;">English</a></li>
+	    <li class="menubar"><a href="/app/home_others/zh-cn" style="color:black;">中文</a></li>
+	    <li class="menubar"><a href="/app/home_others/ja" style="color:black;">日本</a></li>
+	    <li class="menubar"><a href="/app/home_others/tl" style="color:black;">Pilipino</a></li>
+	    <li class="menubar"><a href="/app/home_others/vi" style="color:black;">Tiếng Việt</a></li>
+	    <li style="display: inline; padding-left: 20px;"><a href="/app/home_others/th" style="color:black;">ไทย</a></li>
+	</ul>	
+	{% block content %}
+
+	{% endblock %}    
+    </div>
+</body>
+</html>

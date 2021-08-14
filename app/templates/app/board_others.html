@@ -1,0 +1,20 @@
+{% extends "app/base.html" %}
+{% block content %}
+
+<div class="title">
+    <h1>{{ post.title }}</h1>
+</div>
+<div class="text">
+    {{ post.text }}    
+</div>
+<br />
+<div class="audio">
+    <audio controls autoplay>
+        <source src='/media/audio/audio{{ post.number }}_{{ countrylang }}.mp3'
+	 type="audio/mp3">
+    </audio>
+</div>
+
+{% endblock %}
+
+

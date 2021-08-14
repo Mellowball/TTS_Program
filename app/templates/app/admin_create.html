@@ -1,0 +1,34 @@
+{% extends 'app/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+    <form method="post">
+	{% csrf_token %}
+	<div>
+	    <label for="title" style="font-size:30px">제목</label><br />
+	    <input type="text" name="title" id="title" 
+		style="width:500px; height:50px; font-size:30px;">
+	</div>	
+	<div>
+	    <label for="text" style="font-size:30px">내용</label><br />
+	    <textarea name="text" id="text" 
+		style="width:700px; height:300px; font-size:20px;"></textarea>
+	</div>
+	<input type="submit" value="글 생성" 
+	    style="width:85px; height:50px; font-size:20px">
+    </form>
+
+{% else %}
+
+	<h2>로그인을 먼저 해야합니다.</h2>
+	<input 
+	    type="button" 
+	    value="로그인 페이지" 
+	    onclick="location.replace('/app/admin/login')"
+	    style="font-size:20px; height:35px;"
+	/>
+
+{% endif %}
+
+{% endblock %}
